@@ -11,4 +11,4 @@ WORKDIR /project
 COPY ./notebooks /project/notebooks
 
 EXPOSE 8888
-CMD [ "jupyter-lab", "--ip=0.0.0.0", "--no-browser", "--allow-root"]
+CMD [ "jupyter-lab", "--ip=0.0.0.0", "--no-browser", "--allow-root", "--NotebookApp.token=''", "--NotebookApp.password=''"]
