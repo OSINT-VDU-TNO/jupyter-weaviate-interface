@@ -4,7 +4,7 @@ RUN apt-get update \
 && apt-get install gcc -y \
 && apt-get clean
 
-RUN pip install numpy pandas jupyterlab osint-python-test-bed-adapter avro-python3 pykafka requests altair
+RUN pip install numpy pandas jupyterlab osint-python-test-bed-adapter avro-python3 pykafka requests altair weaviate
 
 WORKDIR /project
 
